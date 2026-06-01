@@ -23,7 +23,7 @@ Nhóm 8 — Khoa Vật Lý, ĐHKHTN — ĐHQGHN, 2026.
 
 ## Dataset
 Sử dụng BDD100K dataset (tập con BDD45K - 45,000 ảnh).  
-Download tại: [Kaggle BDD45K]([https://www.kaggle.com/datasets/eoiwgjlm/bdd45k](https://www.kaggle.com/datasets/eoiwgjlm/bdd45k))
+Download tại: [Kaggle BDD45K](https://www.kaggle.com/datasets/eoiwgjlm/bdd45k)
 
 Cấu trúc thư mục:
 ```
