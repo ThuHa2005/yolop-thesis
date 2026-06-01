@@ -5,8 +5,6 @@ Nhóm 8 — Khoa Vật Lý, ĐHKHTN — ĐHQGHN, 2026.
 
 ## Kết quả (BDD100K val, 10,000 ảnh)
 
-## Kết quả (BDD100K val, 10,000 ảnh)
-
 | Chỉ số | Paper gốc | Pretrained (test lại) | Mô hình của nhóm |
 |--------|:---------:|:---------------------:|:----------------:|
 | DA mIoU | 91.5% | 89.2% | **89.8%** |
