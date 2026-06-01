@@ -40,6 +40,10 @@ Chạy inference trên video:
 ```bash
 python tools/demo.py --source inference/videos/your_video.mp4 --save-dir inference/output 
 ```
+## Kết quả Demo
+*Test trên video thực tế tại Việt Nam*
+
+![Demo](z7890787202970_ab2f66793dd9e3873e9ecfa9322ae682jpg)
 ## Thành viên nhóm
 | Họ tên | MSSV |
 |--------|------|
