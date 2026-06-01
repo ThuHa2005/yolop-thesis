@@ -32,7 +32,7 @@ pip install -r requirements.txt
 ```
 
 Download weights: [epoch-117.pth](https://drive.google.com/file/d/1aO5aUmC3QLAJLxpdT0W-6r8oAEDaFTmc/view?usp=sharing)
-Đặt file `.pth` vào thư mục `weights/`
+Đặt file `.pth` vào thư mục `weights/`.
 Download video/ảnh muốn test đặt vào 'inference/videos/'
 Chạy inference trên video:
 ```bash
