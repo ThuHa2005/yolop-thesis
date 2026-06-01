@@ -1,25 +1,37 @@
 # YOLOP - Autonomous Driving Perception (Thesis)
 
-Multi-task model for object detection, drivable area segmentation, and lane detection.
+Huấn luyện mô hình YOLOP cho bài toán nhận thức cảnh quan lái xe tự động.  
+Nhóm 8 — Khoa Vật Lý, ĐHKHTN — ĐHQGHN, 2026.
 
-## Results
-| Task | Metric | Score |
-|------|--------|-------|
-| Object Detection | mAP@0.5 | 0.75 |
-| Drivable Area | mIOU | 0.89 |
-| Lane Detection | mIOU | 0.70 |
+## Kết quả (BDD100K val, 10,000 ảnh)
+
+| Task | Metric | Mô hình của nhóm | Paper gốc (YOLOP) |
+|------|--------|:-----------------:|:-----------------:|
+| Drivable Area | mIoU | **89.8%** | 91.5% |
+| Lane Line | IoU | **45.7%** | 70.5% |
+| Object Detection | mAP@0.5 | **76.1%** | 76.5% |
+| Inference | FPS | **87.7** | 41 |
 
 ## Training Curves
-![Training Curves](yolop_training_curves.png)
+![Training Curves](yolop_training_curves%20(1).png)
+
+## Chiến lược huấn luyện
+- **Giai đoạn 1:** Epoch 1–89, BDD100K (70k ảnh), train from scratch
+- **Giai đoạn 2:** Epoch 90–118, BDD45K (35k ảnh), resume từ epoch 89
+- Fix NMS tại epoch 89: conf threshold 0.001 → 0.3
+- GPU: Kaggle Tesla T4 × 2, Batch size: 24, Optimizer: Adam LR=0.001
 
 ## Model Weights
 Download: [Google Drive - updating]
 
-## Training
-- Dataset: BDD45K (subset of BDD100K)
-- GPU: Kaggle T4
-- Epochs: 118
-- Optimizer: Adam, LR=0.001
+## Thành viên nhóm
+| Họ tên | MSSV |
+|--------|------|
+| Nguyễn Thị Thu Hà | 23001603 |
+| Triệu Quốc Khánh | 23001615 |
+| Lê Văn Đạt | 23001592 |
+| Triệu Đình Dũng | 23001587 |
 
-## Reference
-[YOLOP paper](https://arxiv.org/abs/2108.11250)
+## Tài liệu tham khảo
+- [YOLOP paper](https://arxiv.org/abs/2108.11250)
+- [BDD100K dataset](https://bdd-data.berkeley.edu/)
