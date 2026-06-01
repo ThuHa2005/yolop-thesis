@@ -21,9 +21,23 @@ Nhóm 8 — Khoa Vật Lý, ĐHKHTN — ĐHQGHN, 2026.
 - Fix NMS tại epoch 89: conf threshold 0.001 → 0.3
 - GPU: Kaggle Tesla T4 × 2, Batch size: 24, Optimizer: Adam LR=0.001
 
-## Model Weights
-Download: [Google Drive - updating]
 
+## Demo
+
+Clone repo gốc YOLOP:
+```bash
+git clone https://github.com/hustvl/YOLOP.git
+cd YOLOP
+pip install -r requirements.txt
+```
+
+Download weights: [epoch-117.pth](https://drive.google.com/file/d/1aO5aUmC3QLAJLxpdT0W-6r8oAEDaFTmc/view?usp=sharing)
+Đặt file `.pth` vào thư mục `weights/`
+Download video/ảnh muốn test đặt vào 'inference/videos/'
+Chạy inference trên video:
+```bash
+python tools/demo.py --source inference/videos/your_video.mp4 --save-dir inference/output 
+```
 ## Thành viên nhóm
 | Họ tên | MSSV |
 |--------|------|
