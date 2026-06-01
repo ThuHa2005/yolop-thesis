@@ -5,12 +5,12 @@ Nhóm 8 — Khoa Vật Lý, ĐHKHTN — ĐHQGHN, 2026.
 
 ## Kết quả (BDD100K val, 10,000 ảnh)
 
-| Task | Metric | Mô hình của nhóm | Paper gốc (YOLOP) |
-|------|--------|:-----------------:|:-----------------:|
-| Drivable Area | mIoU | **89.8%** | 91.5% |
-| Lane Line | IoU | **45.7%** | 70.5% |
-| Object Detection | mAP@0.5 | **76.1%** | 76.5% |
-| Inference | FPS | **87.7** | 41 |
+| Task | Metric | Nhóm | Pretrained (test lại) | Paper gốc |
+|------|--------|:----:|:---------------------:|:---------:|
+| Drivable Area | mIoU | **89.8%** | 89.2% | 91.5% |
+| Lane Line | IoU | **45.7%** | 38.4% | 70.5% |
+| Object Detection | mAP@0.5 | **76.1%** | 76.5% | 76.5% |
+| Inference | FPS | **87.7** | - | 41 |
 
 ## Training Curves
 ![Training Curves](yolop_training_curves%20(1).png)
