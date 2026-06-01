@@ -21,7 +21,26 @@ Nhóm 8 — Khoa Vật Lý, ĐHKHTN — ĐHQGHN, 2026.
 - Fix NMS tại epoch 89: conf threshold 0.001 → 0.3
 - GPU: Kaggle Tesla T4 × 2, Batch size: 24, Optimizer: Adam LR=0.001
 
+## Dataset
+Sử dụng BDD100K dataset (tập con BDD45K - 45,000 ảnh).  
+Download tại: [Kaggle BDD45K]([https://www.kaggle.com/datasets/eoiwgjlm/bdd45k](https://www.kaggle.com/datasets/eoiwgjlm/bdd45k))
 
+Cấu trúc thư mục:
+```
+yolop_subset/
+├── images/
+│   ├── train/
+│   └── val/
+├── det_annotations/
+│   ├── train/
+│   └── val/
+├── da_seg_annotations/
+│   ├── train/
+│   └── val/
+└── ll_seg_annotations/
+    ├── train/
+    └── val/
+```
 ## Demo
 
 Clone repo gốc YOLOP:
